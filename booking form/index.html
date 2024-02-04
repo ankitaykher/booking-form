@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>AIRLINE RESERVATION SYSTEM</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../lib/w3.css">
+	<link rel="stylesheet" href="/my.css">
+</head>
+<nav>
+
+	<img src="/images/logo.png" class="logo">
+
+
+	<ul class="nav-buttons">
+		<li><a class="btn-nav" href="index.html">Home</a></li>
+		<li><a class="btn-nav" href="manage.html">Manage Your Trip</a></li>
+		<li><a class="btn-nav" href="about.html">About</a></li>
+		<li><a class="btn-nav" href="offers.html">offers</a></li>
+		<li><a class="btn-nav" href="contact.html">contact</a></li>
+		<li><a class="btn-nav" href="login.html">login</a></li>
+	</ul>
+</nav>
+<!--Card-->
+
+<body>
+
+	<center>
+		<table border="6">
+			<th>Destination</th>
+			<td><select class="browser-default custom-select mb-4" name="Destination" id="Destination">
+					<option value="" selected="">Destination</option>
+					<option value="New Deli">Oneway</option>
+					<option value="New Deli">Roundtrip</option>
+
+				</select></td>
+
+			</thead>
+			<tbody>
+
+				<tr>
+					<th>passenger Name</th>
+					<td><input type="text" name="fname" id="fname"></td>
+				</tr>
+
+
+
+				<tr>
+					<th>Last Name</th>
+					<td><input type="text" name="lname" id="lname"></td>
+				</tr>
+				<tr>
+					<th>Email</th>
+					<td><input type="text" name="email" id="email"></td>
+				</tr>
+				<tr>
+					<th>Age</th>
+					<td><input type="text" name="age" id="age"></td>
+				</tr>
+
+				<th>Departing</th>
+				<td><input type="date" class="form-control select-date " name="departing" id="departing"></td>
+				</tr>
+				<th>Returning</th>
+				<td><input type="date" class="form-control select-date " name="Returning" id="Returning"></td>
+				</tr>
+				<th>From city</th>
+				<td><select class="browser-default custom-select mb-4" name="fromcity" id="fromcity">
+						<option value="" selected="">From City/Airport</option>
+						<option value="New Deli">New Delhi</option>
+						<option value="Mumbai">Mumbai</option>
+						<option value="Bangalore">Bangalore</option>
+						<option value="Ambernath">Ambernath</option>
+					</select></td>
+				</tr>
+				<th>To city</th>
+				<td><select class="browser-default custom-select mb-4" name="Tocity" id="Tocity">
+						<option value="" selected="">ToCity/Airport</option>
+						<option value="New Deli">New Delhi</option>
+						<option value="Mumbai">Mumbai</option>
+						<option value="Bangalore">Bangalore</option>
+						<option value="Ambernath">Ambernath</option>
+					</select></td>
+				</tr>
+				<th>Flight Option</th>
+				<td><select class="browser-default custom-select mb-4" name="flight" id="flight">
+						<option value="" selected="">flightoption</option>
+						<option value="Indigo">Indigo</option>
+						<option value="Airindia">Airindia</option>
+						<option value="Gofirst">Gofirst</option>
+						<option value="USA">USA</option>
+					</select></td>
+				</tr>
+				<th>Flight class</th>
+				<td><select class="browser-default custom-select mb-4" name="flightClass" id="flightClass">
+						<option value="" selected="">flightClass</option>
+						<option value="Economy">Economy</option>
+						<option value="Firstclass">Firstclass</option>
+
+					</select></td>
+				</tr>
+				<th>Child</th>
+				<td><select class="browser-default custom-select mb-4" name="Child" id="Child">
+						<option value="" selected="">Child</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+
+					</select></td>
+				</tr>
+				<th>Total</th>
+				<td><select class="browser-default custom-select mb-4" name="Total" id="Total">
+						<option value="" selected="">Total</option>
+						<option value="$75"> 1</option>
+						<option value="$120">2</option>
+						<option value="$190">3</option>
+						<option value="$200">4</option>
+						<option value="$200">5</option>
+
+					</select></td>
+				</tr>
+
+			</tbody>
+		</table>
+
+		<button class="button" id="btn">Book</button>
+
+		
+
+	</center>
+
+
+	<footer>
+		<div class="container" id="cont">
+
+			<div class="sumUp">
+				<div class="head">Boarding Pass</div>
+
+			<div class="innerMaterial-1">
+				
+				<div class="box-1">
+					<div class="my1">Name of Passenger: <span id="nm"></span> <span class="last-name"></span> </div>
+					
+					<div class="passAge ">Age: <span class="inPassAge"></span> </div>
+					
+				</div>
+				
+				<div class="box-2">
+					<div class="my1">Mail:<span class="myMail"></span></div>
+					<div >Departing: <span class="dep"></span></div>
+					<div >Returning: <span class="ret"></span></div>
+				</div>
+			</div>
+				
+				<div class="box-2">
+					<div >From: <span class="fmCity"></span> </div>
+					<div >To: <span class="tCity"></span> </div>
+				</div>
+				
+				<div class="box-3">
+					<div class="bx-1">
+						<div class="my1">Option Selected: <span class="option"></span> </div>
+						<div>Class: <span class="clss"></span> </div>
+					</div>
+					
+					<div>
+					<div>Child: <span class="child"></span> </div>
+					<div>Total: <span class="totall"></span> </div>
+				</div>
+				</div>
+			</div>
+			
+		</div>
+
+	</footer>
+	<button class="btn-new" id="newBtn">New Booking</button>
+	<br>
+
+	<script src="/app.js"></script>
+
+
+</body>
+
+</html>

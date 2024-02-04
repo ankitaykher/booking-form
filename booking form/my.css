@@ -1,0 +1,72 @@
+#btn{
+    width: 9rem;
+    height: 2rem;
+    margin-top: 1rem;
+    font-size: 21px;
+    border-radius: 27px;
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+
+.btn-new{
+    display: none;
+    background-color: rgb(230, 169, 169);
+    width: 9rem;
+    height: 2rem;
+    margin-top: 1rem;
+    font-size: 15px;
+    border-radius: 27px;
+    cursor: pointer;
+    margin-bottom: 1rem;
+
+    position: relative;
+    left: 63rem;
+}
+
+.container{
+    display: none;
+    margin-top: 1rem;
+    background-color: rgb(148, 246, 253);
+    margin: auto;
+    width: 50rem;
+    height: 16rem;
+    border-radius: 32px;
+    cursor: pointer;
+    transition: all 1s ease;
+    
+}
+
+.container:hover{
+    box-shadow: 10px 5px 5px rgba(1,1,1,0.1);
+}
+.head{
+    text-align: center;
+    margin: 12px;
+    font-size: 28px;
+}
+
+.my1{ 
+    margin-bottom: 8px;
+}
+
+.sumUp{
+    display: flex;
+    flex-direction: column;
+}
+
+.innerMaterial-1{
+    display: flex;
+    justify-content:space-evenly;
+}
+
+
+.box-2{
+    text-align: center;
+    margin: 9px 0;
+}
+
+.box-3{
+    display:flex;
+    justify-content:space-evenly;
+}
+
